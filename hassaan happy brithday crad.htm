@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Haris Baloch</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2e3b4e, #6a7f93); /* Darker and more vibrant gradient */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: backgroundAnimation 10s linear infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0%, 100% {
+                background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            }
+            50% {
+                background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            }
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff; /* Pure white for the text */
+            margin: 20px 0;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+            }
+            100% {
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+            }
+        }
+
+        .heartbeat-line {
+            position: relative;
+            width: 400px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .heartbeat-line::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: #58a6ff;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .heartbeat-line svg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 100px;
+        }
+
+        .heartbeat-line svg path {
+            fill: none;
+            stroke: #ff6b81; /* Slightly brighter for better visibility */
+            stroke-width: 2;
+            stroke-dasharray: 600;
+            stroke-dashoffset: 600;
+            animation: draw 2s linear infinite;
+        }
+
+        @keyframes draw {
+            0% {
+                stroke-dashoffset: 600;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .image {
+            width: 250px; /* Reduced size */
+            height: auto;
+            margin: 20px auto;
+            border: 5px solid #ff6b81;
+            box-shadow: 0 0 15px rgba(255, 107, 129, 0.8), 0 0 30px rgba(255, 107, 129, 0.5);
+            animation: float 3s ease-in-out infinite;
+            overflow: hidden;
+            border-radius: 10px; /* Slightly rounded corners */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto; /* Ensures full visibility */
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        
+
+        footer {
+            position: absolute;
+            bottom: 10px; /* Adjusted position */
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: #ffd700;
+            animation: fadeInFooter 3s ease-in-out;
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday Hassaan Nisar</h1>
+        <div class="heartbeat-line">
+            <svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 50 H50 L70 10 L90 90 L110 50 H150 L170 30 L190 70 L210 50 H400" />
+            </svg>
+        </div>
+        <div class="image">
+            <img src="hasssan.jpg" alt="Haris Baloch">
+        </div>
+    <footer>Wishing you all the happiness in the world!</footer>
+</body>
+</html>
